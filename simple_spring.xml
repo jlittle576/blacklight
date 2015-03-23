@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<springData>
+	<Units/>
+		<UnitSetting name="angle" current="degrees" />
+		<UnitSetting name="force" current="newtons" />
+		<UnitSetting name="length" current="mm" />
+	</Units>
+     <SpringProperties
+      freeLength="300"
+	  method ="Spline"
+      independentAxis="deflection"
+     >
+</springData>
+

@@ -1,0 +1,2 @@
+"D:\Dropbox\code\installations\Portable Python 2.7.5.1\App\python.exe" "D:\Dropbox\code\installations\Portable Python 2.7.5.1\App\Lib\site-packages\PyQt4\uic\pyuic.py" gui.ui > gui.py
+"D:\Dropbox\code\installations\Portable Python 2.7.5.1\App\python.exe" "D:\Dropbox\code\installations\Portable Python 2.7.5.1\App\Lib\site-packages\PyQt4\uic\pyuic.py" preferences.ui > preferences.py

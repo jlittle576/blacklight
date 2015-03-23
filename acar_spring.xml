@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<afc
+ xmlns="http://www.mscsoftware.com/:vfc"
+ xmlns:afc="http://www.mscsoftware.com/:afc"
+>
+     <afc:Bibliography
+     >
+          <File
+           schema="afc"
+           version="2.0.0.0"
+           URI="mdids://loop/springs.tbl/MDI_300_300_spr.xml"
+           publicationDate="2012-06-26 14:23:47-04:00"
+          />
+          <Revision
+           version="2"
+          />
+          <Corporation
+           author="MSC.Software"
+           URI="http://www.mscsoftware.com/"
+          />
+          <Author
+           user="Jlittle"
+           name="-unknown name-"
+          />
+          <Environment
+           hostName="L-5023X-1"
+           operatingSystem="MS Windows NT 6.1"
+          />
+          <Application
+           name="MSC/AFC"
+           version="02.00.00"
+          />
+     </afc:Bibliography>
+     <afc:Units
+     >
+          <afc:UnitSetting
+           name="angle"
+           current="degrees"
+          />
+          <afc:UnitSetting
+           name="current"
+           current="ampere"
+          />
+          <afc:UnitSetting
+           name="force"
+           current="newton"
+          />
+          <afc:UnitSetting
+           name="length"
+           current="mm"
+          />
+          <afc:UnitSetting
+           name="luminosity"
+           current="candela"
+          />
+          <afc:UnitSetting
+           name="mass"
+           current="kg"
+          />
+          <afc:UnitSetting
+           name="quantity"
+           current="mole"
+          />
+          <afc:UnitSetting
+           name="solidAngle"
+           current="steradian"
+          />
+          <afc:UnitSetting
+           name="temperature"
+           current="kelvin"
+          />
+          <afc:UnitSetting
+           name="time"
+           current="second"
+          />
+     </afc:Units>
+     <SpringProperties
+      active="true"
+      userDefined="false"
+      diameter="-1"
+      coils="-1"
+      rate="300"
+      freeLength="300"
+      method="linear"
+      independentAxis="deflection"
+     >
+          <Spline
+           name="spline_data"
+           id="0"
+           active="true"
+           userDefined="false"
+           interpolation_method="akima"
+          >
+            <![CDATA[
+           -100          -12500
+            -90          -11250
+            -80          -10000
+            -70           -8750
+            -60           -7500
+            -50           -6250
+            -40           -5000
+            -30           -3750
+            -20           -2500
+            -10           -1250
+              0               0
+             10            1250
+             20            2500
+             30            3750
+             40            5000
+             50            6250
+             60            7500
+             70            8750
+             80           10000
+             90           11250
+            100           12500
+]]>
+               <Comment
+                userDefined="false"
+               >
+                 <![CDATA[]]>
+               </Comment>
+          </Spline>
+     </SpringProperties>
+</afc>

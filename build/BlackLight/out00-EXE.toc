@@ -1,0 +1,9 @@
+('D:\\Dropbox\\code\\projects\\blacklight\\dist\\BlackLight.exe',
+ True,
+ False,
+ 'icon_small.ico',
+ None,
+ [],
+ None,
+ False,
+ 1396852736L)

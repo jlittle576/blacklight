@@ -1,0 +1,1 @@
+pyinstaller BlackLight.spec --onefile --icon="./icon_small.ico"

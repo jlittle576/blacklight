@@ -1,0 +1,41 @@
+<ShockData>
+	<Comment>
+		<![CDATA[A shock with a two-stage spring and a asymmetric linear damper]]>
+	</Comment>		
+    <Units>
+        <UnitSetting name="force" current="newtons" />
+        <UnitSetting name="length" current="mm" />
+        <UnitSetting name="time" current="s" />
+    </Units>
+	<SpringProperties
+      freeLength="300"
+      method ="Spline"
+      independentAxis="deflection">
+      <SplineData
+           name="spline_data"
+           interpolation_method="piecewise"
+          >
+          <![CDATA[
+            -90          -12000
+            -60           -6000
+              0               0
+             60            6000
+             90           12000
+            ]]> 
+        <Comment>
+            <![CDATA[1000 N/mm on center, 2000 N/mm after 60 mm defelction]]>
+        </Comment></SplineData>
+        <Comment>
+            <![CDATA[A two-stage stiffening spring]]>
+        </Comment>
+    </SpringProperties>
+    <DamperProperties
+      method ="bi-linear"
+      independentAxis="velocity">
+        <CompressionData rate="4.0"></CompressionData>
+        <ExtensionData rate="7.0"></ExtensionData> 
+		<Comment>
+            <![CDATA[A bi-linear damper, higher rate in extension]]>
+        </Comment>		
+	</DamperProperties>
+</ShockData>

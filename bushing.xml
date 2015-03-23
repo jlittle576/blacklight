@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<afc xmlns="http://www.mscsoftware.com/:vfc" xmlns:afc="http://www.mscsoftware.com/:afc">
+  <afc:Bibliography>
+    <File schema="afc" version="1.0.0.0" URI="/vobs/vpg/acar/src/shared_car_database.cdb/bushings.tbl/mdi_0001.xml" publicationDate="2003-01-24T16:52:49-05:00" />
+    <Revision version="1" />
+    <Corporation author="Mechanical Dynamics, Inc." URI="http://www.adams.com/" />
+    <Author user="carlib" name="Car Library" />
+    <Environment hostName="yukon" operatingSystem="IRIX64 6.5" />
+    <Application name="ADAMS/Car" version="2003" />
+  </afc:Bibliography>
+  <afc:Units>
+    <afc:UnitSetting name="angle" current="deg" />
+    <afc:UnitSetting name="current" current="ampere" />
+    <afc:UnitSetting name="force" current="newton" />
+    <afc:UnitSetting name="length" current="mm" />
+    <afc:UnitSetting name="luminosity" current="candela" />
+    <afc:UnitSetting name="mass" current="kilogram" />
+    <afc:UnitSetting name="quantity" current="mole" />
+    <afc:UnitSetting name="solidAngle" current="steradian" />
+    <afc:UnitSetting name="temperature" current="kelvin" />
+    <afc:UnitSetting name="time" current="second" />
+  </afc:Units>
+  <ConnectorBushingProperties active="true" shape="cylindrical" radius="30" height="80">
+    <ConnectorDirectionComponent name="x" active="true">
+      <ConnectorStiffness name="stiffness" active="true" type="spline">
+        <ConnectorLinearData name="linear_data" active="true" rate="0" />
+        <ConnectorSplineData name="spline_data" id="0" active="true" interpolation_method="akima" xUnit="mm" yUnit="N">
+          <![CDATA[
+            -10          -45000
+             -8          -36000
+             -6          -27000
+             -4          -18000
+             -2           -9000
+              0               0
+              2            9000
+              4           18000
+              6           27000
+              8           36000
+             10           45000
+]]>
+          <Comment>
+            <![CDATA[
+]]>
+          </Comment>
+        </ConnectorSplineData>
+        <ConnectorPieceWiseData name="piecewise_data" active="true" smoothing="false" smoothingInterval="0">
+          <afc:VectorAttribute name="slopes">
+            100 10 100
+          </afc:VectorAttribute>
+          <afc:VectorAttribute name="breaks">
+            -10 10
+          </afc:VectorAttribute>
+          <Comment>
+            <![CDATA[
+]]>
+          </Comment>
+        </ConnectorPieceWiseData>
+        <ConnectorHysteresisData name="hysteresis_data" active="true" interpolation_method="akima" velocityThreshold="0" />
+      </ConnectorStiffness>
+      <ConnectorDamping name="damping" active="true" type="linear">
+        <ConnectorLinearData name="linear_data" active="true" rate="0.5" />
+        <ConnectorSplineData name="spline_data" id="0" active="true" interpolation_method="akima">
+          <![CDATA[
+]]>
+        </ConnectorSplineData>
+        <ConnectorPieceWiseData name="piecewise_data" active="true" smoothing="false" smoothingInterval="0">
+          <afc:VectorAttribute name="slopes">
+            100 10 100
+          </afc:VectorAttribute>
+          <afc:VectorAttribute name="breaks">
+            -10 10
+          </afc:VectorAttribute>
+          <Comment>
+            <![CDATA[
+]]>
+          </Comment>
+        </ConnectorPieceWiseData>
+        <ConnectorKfractionData name="kfraction_data" active="true" fraction="0" />
+        <ConnectorHysteresisData name="hysteresis_data" active="true" interpolation_method="akima" velocityThreshold="0" />
+      </ConnectorDamping>
+    </ConnectorDirectionComponent>
+    <ConnectorDirectionComponent name="y" active="true">
+      <ConnectorStiffness name="stiffness" active="true" type="spline">
+        <ConnectorLinearData name="linear_data" active="true" rate="0" />
+        <ConnectorSplineData name="spline_data" id="0" active="true" interpolation_method="akima" xUnit="mm" yUnit="N">
+          <![CDATA[
+            -10          -45000
+             -8          -36000
+             -6          -27000
+             -4          -18000
+             -2           -9000
+              0               0
+              2            9000
+              4           18000
+              6           27000
+              8           36000
+             10           45000
+]]>
+          <Comment>
+            <![CDATA[
+]]>
+          </Comment>
+        </ConnectorSplineData>
+        <ConnectorPieceWiseData name="piecewise_data" active="true" smoothing="false" smoothingInterval="0">
+          <afc:VectorAttribute name="slopes">
+            100 10 100
+          </afc:VectorAttribute>
+          <afc:VectorAttribute name="breaks">
+            -10 10
+          </afc:VectorAttribute>
+          <Comment>
+            <![CDATA[
+]]>
+          </Comment>
+        </ConnectorPieceWiseData>
+        <ConnectorHysteresisData name="hysteresis_data" active="true" interpolation_method="akima" velocityThreshold="0" />
+      </ConnectorStiffness>
+      <ConnectorDamping name="damping" active="true" type="linear">
+        <ConnectorLinearData name="linear_data" active="true" rate="0.5" />
+        <ConnectorSplineData name="spline_data" id="0" active="true" interpolation_method="akima">
+          <![CDATA[
+]]>
+        </ConnectorSplineData>
+        <ConnectorPieceWiseData name="piecewise_data" active="true" smoothing="false" smoothingInterval="0">
+          <afc:VectorAttribute name="slopes">
+            100 10 100
+          </afc:VectorAttribute>
+          <afc:VectorAttribute name="breaks">
+            -10 10
+          </afc:VectorAttribute>
+          <Comment>
+            <![CDATA[
+]]>
+          </Comment>
+        </ConnectorPieceWiseData>
+        <ConnectorKfractionData name="kfraction_data" active="true" fraction="0.1" />
+        <ConnectorHysteresisData name="hysteresis_data" active="true" interpolation_method="akima" velocityThreshold="0" />
+      </ConnectorDamping>
+    </ConnectorDirectionComponent>
+    <ConnectorDirectionComponent name="z" active="true">
+      <ConnectorStiffness name="stiffness" active="true" type="spline">
+        <ConnectorLinearData name="linear_data" active="true" rate="0" />
+        <ConnectorSplineData name="spline_data" id="0" active="true" interpolation_method="akima" xUnit="mm" yUnit="N">
+          <![CDATA[
+            -10          -45000
+             -8          -36000
+             -6          -27000
+             -4          -18000
+             -2           -9000
+              0               0
+              2            9000
+              4           18000
+              6           27000
+              8           36000
+             10           45000
+]]>
+          <Comment>
+            <![CDATA[
+]]>
+          </Comment>
+        </ConnectorSplineData>
+        <ConnectorPieceWiseData name="piecewise_data" active="true" smoothing="false" smoothingInterval="0">
+          <afc:VectorAttribute name="slopes">
+            100 10 100
+          </afc:VectorAttribute>
+          <afc:VectorAttribute name="breaks">
+            -10 10
+          </afc:VectorAttribute>
+          <Comment>
+            <![CDATA[
+]]>
+          </Comment>
+        </ConnectorPieceWiseData>
+        <ConnectorHysteresisData name="hysteresis_data" active="true" interpolation_method="akima" velocityThreshold="0" />
+      </ConnectorStiffness>
+      <ConnectorDamping name="damping" active="true" type="linear">
+        <ConnectorLinearData name="linear_data" active="true" rate="0.5" />
+        <ConnectorSplineData name="spline_data" id="0" active="true" interpolation_method="akima">
+          <![CDATA[
+]]>
+        </ConnectorSplineData>
+        <ConnectorPieceWiseData name="piecewise_data" active="true" smoothing="false" smoothingInterval="0">
+          <afc:VectorAttribute name="slopes">
+            100 10 100
+          </afc:VectorAttribute>
+          <afc:VectorAttribute name="breaks">
+            -10 10
+          </afc:VectorAttribute>
+          <Comment>
+            <![CDATA[
+]]>
+          </Comment>
+        </ConnectorPieceWiseData>
+        <ConnectorKfractionData name="kfraction_data" active="true" fraction="0.1" />
+        <ConnectorHysteresisData name="hysteresis_data" active="true" interpolation_method="akima" velocityThreshold="0" />
+      </ConnectorDamping>
+    </ConnectorDirectionComponent>
+    <ConnectorDirectionComponent name="rx" active="true">
+      <ConnectorStiffness name="stiffness" active="true" type="spline">
+        <ConnectorLinearData name="linear_data" active="true" rate="0" />
+        <ConnectorSplineData name="spline_data" id="0" active="true" interpolation_method="akima" xUnit="deg" yUnit="N-mm">
+          <![CDATA[
+            -45      -2.025e+06
+            -36       -1.62e+06
+            -27      -1.215e+06
+            -18         -810000
+             -9         -405000
+              0               0
+              9          405000
+             18          810000
+             27       1.215e+06
+             36        1.62e+06
+             45       2.025e+06
+]]>
+          <Comment>
+            <![CDATA[
+]]>
+          </Comment>
+        </ConnectorSplineData>
+        <ConnectorPieceWiseData name="piecewise_data" active="true" smoothing="false" smoothingInterval="0">
+          <afc:VectorAttribute name="slopes">
+            100 10 100
+          </afc:VectorAttribute>
+          <afc:VectorAttribute name="breaks">
+            -10 10
+          </afc:VectorAttribute>
+          <Comment>
+            <![CDATA[
+]]>
+          </Comment>
+        </ConnectorPieceWiseData>
+        <ConnectorHysteresisData name="hysteresis_data" active="true" interpolation_method="akima" velocityThreshold="0" />
+      </ConnectorStiffness>
+      <ConnectorDamping name="damping" active="true" type="linear">
+        <ConnectorLinearData name="linear_data" active="true" rate="0.5" />
+        <ConnectorSplineData name="spline_data" id="0" active="true" interpolation_method="akima">
+          <![CDATA[
+]]>
+        </ConnectorSplineData>
+        <ConnectorPieceWiseData name="piecewise_data" active="true" smoothing="false" smoothingInterval="0">
+          <afc:VectorAttribute name="slopes">
+            100 10 100
+          </afc:VectorAttribute>
+          <afc:VectorAttribute name="breaks">
+            -10 10
+          </afc:VectorAttribute>
+          <Comment>
+            <![CDATA[
+]]>
+          </Comment>
+        </ConnectorPieceWiseData>
+        <ConnectorKfractionData name="kfraction_data" active="true" fraction="0.1" />
+        <ConnectorHysteresisData name="hysteresis_data" active="true" interpolation_method="akima" velocityThreshold="0" />
+      </ConnectorDamping>
+    </ConnectorDirectionComponent>
+    <ConnectorDirectionComponent name="ry" active="true">
+      <ConnectorStiffness name="stiffness" active="true" type="spline">
+        <ConnectorLinearData name="linear_data" active="true" rate="0" />
+        <ConnectorSplineData name="spline_data" id="0" active="true" interpolation_method="akima" xUnit="deg" yUnit="N-mm">
+          <![CDATA[
+            -45      -2.025e+06
+            -36       -1.62e+06
+            -27      -1.215e+06
+            -18         -810000
+             -9         -405000
+              0               0
+              9          405000
+             18          810000
+             27       1.215e+06
+             36        1.62e+06
+             45       2.025e+06
+]]>
+          <Comment>
+            <![CDATA[
+]]>
+          </Comment>
+        </ConnectorSplineData>
+        <ConnectorPieceWiseData name="piecewise_data" active="true" smoothing="false" smoothingInterval="0">
+          <afc:VectorAttribute name="slopes">
+            100 10 100
+          </afc:VectorAttribute>
+          <afc:VectorAttribute name="breaks">
+            -10 10
+          </afc:VectorAttribute>
+          <Comment>
+            <![CDATA[
+]]>
+          </Comment>
+        </ConnectorPieceWiseData>
+        <ConnectorHysteresisData name="hysteresis_data" active="true" interpolation_method="akima" velocityThreshold="0" />
+      </ConnectorStiffness>
+      <ConnectorDamping name="damping" active="true" type="linear">
+        <ConnectorLinearData name="linear_data" active="true" rate="0.5" />
+        <ConnectorSplineData name="spline_data" id="0" active="true" interpolation_method="akima">
+          <![CDATA[
+]]>
+        </ConnectorSplineData>
+        <ConnectorPieceWiseData name="piecewise_data" active="true" smoothing="false" smoothingInterval="0">
+          <afc:VectorAttribute name="slopes">
+            100 10 100
+          </afc:VectorAttribute>
+          <afc:VectorAttribute name="breaks">
+            -10 10
+          </afc:VectorAttribute>
+          <Comment>
+            <![CDATA[
+]]>
+          </Comment>
+        </ConnectorPieceWiseData>
+        <ConnectorKfractionData name="kfraction_data" active="true" fraction="0.1" />
+        <ConnectorHysteresisData name="hysteresis_data" active="true" interpolation_method="akima" velocityThreshold="0" />
+      </ConnectorDamping>
+    </ConnectorDirectionComponent>
+    <ConnectorDirectionComponent name="rz" active="true">
+      <ConnectorStiffness name="stiffness" active="true" type="spline">
+        <ConnectorLinearData name="linear_data" active="true" rate="0" />
+        <ConnectorSplineData name="spline_data" id="0" active="true" interpolation_method="akima">
+          <![CDATA[
+            -45          -36000
+            -36          -28800
+            -27          -21600
+            -18          -14400
+             -9           -7200
+              0               0
+              9            7200
+             18           14400
+             27           21600
+             36           28800
+             45           36000
+]]>
+        </ConnectorSplineData>
+        <ConnectorPieceWiseData name="piecewise_data" active="true" smoothing="false" smoothingInterval="0">
+          <afc:VectorAttribute name="slopes">
+            100 10 100
+          </afc:VectorAttribute>
+          <afc:VectorAttribute name="breaks">
+            -10 10
+          </afc:VectorAttribute>
+          <Comment>
+            <![CDATA[
+]]>
+          </Comment>
+        </ConnectorPieceWiseData>
+        <ConnectorHysteresisData name="hysteresis_data" active="true" interpolation_method="akima" velocityThreshold="0" />
+      </ConnectorStiffness>
+      <ConnectorDamping name="damping" active="true" type="linear">
+        <ConnectorLinearData name="linear_data" active="true" rate="0.5" />
+        <ConnectorSplineData name="spline_data" id="0" active="true" interpolation_method="akima">
+          <![CDATA[
+]]>
+        </ConnectorSplineData>
+        <ConnectorPieceWiseData name="piecewise_data" active="true" smoothing="false" smoothingInterval="0">
+          <afc:VectorAttribute name="slopes">
+            100 10 100
+          </afc:VectorAttribute>
+          <afc:VectorAttribute name="breaks">
+            -10 10
+          </afc:VectorAttribute>
+          <Comment>
+            <![CDATA[
+]]>
+          </Comment>
+        </ConnectorPieceWiseData>
+        <ConnectorKfractionData name="kfraction_data" active="true" fraction="0.1" />
+        <ConnectorHysteresisData name="hysteresis_data" active="true" interpolation_method="akima" velocityThreshold="0" />
+      </ConnectorDamping>
+    </ConnectorDirectionComponent>
+  </ConnectorBushingProperties>
+</afc>
